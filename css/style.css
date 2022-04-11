@@ -102,7 +102,7 @@ body {
 }
 
 #about-mobile h2 {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 4.5rem;
     color: #01313B;
     letter-spacing: 30px;
@@ -140,6 +140,82 @@ body {
 }
 
 
+#ringo-event {
+    background: url('../img/bg-green-patern.jpg');
+    background-size: cover;
+    padding-top: 35px;
+    color: #ffffff;
+    padding-bottom: 65px;
+}
+
+.st {
+    font-size: 14px;
+    line-height: 2rem;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.kotak {
+    border: 2px solid white;
+    min-width: 290px;
+    min-height: auto;
+    padding: 25px 25px 5px 25px;
+}
+
+
+.kotak h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: #FFFFFF;
+}
+
+.kotak p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1rem;
+    color: #FFFFFF;
+}
+
+#widget-footer {
+    background-color: #01313B;
+    padding-top: 60px;
+    color: #ffffff;
+    padding-bottom: 35px;
+}
+
+#widget-footer h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 26px;
+}
+
+#widget-footer p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    min-width: 100px;
+}
+
+.footer{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+}
+
 
 
 
@@ -159,8 +235,15 @@ body {
         border: none;
     }
 
+    #ringo-event {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
 
 }
+
+
 
 
 /* Desktop Only CSS */
@@ -176,6 +259,10 @@ body {
 
     .row-set-2 {
         padding: 0 70px !important;
+    }
+
+    .row-set-event {
+        padding: 0 120px !important;
     }
 
     .navbar-nav {
@@ -278,7 +365,7 @@ body {
     }
 
     #about-content h2 {
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-size: 4.5rem;
         color: #01313B;
         letter-spacing: 30px;
@@ -286,3 +373,10 @@ body {
     }
 
 }
+
+/* LG size
+@media screen and (min-width:1900px){
+    .r-left-text {
+        transform: translate(396px, 130px);
+    }
+} */
