@@ -1,0 +1,288 @@
+/* Font Face */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Unica+One&display=swap');
+
+@font-face {
+    font-family: gotham;
+    src: url(../fonts/GothamBook.ttf);
+}
+
+@font-face {
+    font-family: gotham-light;
+    src: url(../fonts/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: gotham-bold;
+    src: url(../fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: specify-nomal;
+    src: url(../fonts/SpecifyPERSONAL-NormBlack.ttf);
+}
+
+/* Global Css */
+
+html,
+body {
+    height: 100%;
+    font-size: 1rem;
+    overflow-x: hidden;
+    font-family: gotham;
+    background: url(../img/bg-sementara.jpg);
+}
+
+
+.navbar {
+    font-family: 'Unica One', cursive;
+    font-size: 1rem;
+    letter-spacing: 6px;
+}
+
+.nav-item {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    text-transform: uppercase;
+
+}
+
+.ring-header {
+    color: #ffffff;
+}
+
+.ring-header h1 {
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    font-family: 'Unica One', cursive;
+}
+
+.ringo-button {
+    font-family: gotham-light;
+    border: 0.6px solid white;
+    letter-spacing: 3px;
+    border-radius: 0%;
+    text-transform: uppercase;
+}
+
+.ringo-button-dark {
+    font-family: gotham-light;
+    border: 0.6px solid #01313B;
+    letter-spacing: 3px;
+    border-radius: 0%;
+    color: #01313B;
+    text-transform: uppercase;
+}
+
+.ringo-button-dark:hover {
+    color: white;
+    background-color: #01313B;
+}
+
+#about-mobile {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background: #EEDFCD;
+}
+
+#about-mobile .container {
+    padding: 35px 0;
+}
+
+.title {
+    font-size: 4.5rem;
+    color: #ffffff;
+    letter-spacing: 30px;
+    font-family: 'Unica One', cursive;
+    text-transform: uppercase;
+}
+
+#about-mobile h2 {
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    color: #01313B;
+    letter-spacing: 30px;
+    font-family: 'Unica One', cursive;
+}
+
+#about-mobile p {
+    color: #01313B;
+    line-height: 2rem;
+}
+
+#ourmenu {
+    margin-top: 87px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#ourmenu h3 {
+    font-family: gotham-bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.25rem;
+    letter-spacing: 0.5em;
+}
+
+#ourmenu p {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.25rem;
+    color: #FFFFFF;
+    /* padding-right: 280px; */
+}
+
+
+
+
+
+
+
+/* from mini tablets to mobile */
+@media screen and (max-width:991px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .navbar.navbar-expand-lg.navbar-dark.row-set {
+        margin-top: 20px;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+
+}
+
+
+/* Desktop Only CSS */
+@media screen and (min-width:700px) {
+
+    .hide-on-desktop {
+        display: none;
+    }
+
+    .row-set {
+        padding: 0 160px !important;
+    }
+
+    .row-set-2 {
+        padding: 0 70px !important;
+    }
+
+    .navbar-nav {
+        padding-left: 99px;
+    }
+
+    .nav-item .nav-link {
+        margin-left: 1.25rem;
+    }
+
+    .link-active::after {
+        display: inline-block;
+        text-decoration: none;
+        content: '';
+        display: block;
+        width: 90%;
+        height: 1px;
+        background: #ffffff;
+    }
+
+    .cool-link {
+        display: inline-block;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .cool-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: #ffffff;
+        transition: width .3s;
+    }
+
+    .cool-link:hover::after {
+        width: 90%;
+        transition: width .3s;
+    }
+
+    .navbar.navbar-expand-lg.navbar-dark {
+        /* border-bottom: 1px solid rgba\(; */
+        border-bottom: 1px solid #E2E5EB40;
+        height: 88px;
+    }
+
+    .nav-item p {
+        margin-bottom: 0;
+    }
+
+    .ring-header {
+        margin-top: -88px !important;
+    }
+
+    .r-left-text {
+        transform: translate(156px, 130px);
+    }
+
+    .img-col {
+        background: url(../img/burger-yummy.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 750px;
+    }
+
+    #about {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        background: #EEDFCD;
+        color: #01313B;
+    }
+
+    .duri-atas,
+    .duri-bawah {
+        z-index: 1 !important;
+    }
+
+    .kotak-pembalut {
+        position: absolute;
+        background-image: url(../img/bg-patern.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 460px;
+        height: 750px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    #about-content {
+        z-index: 8;
+        position: relative;
+        margin-top: -645px;
+    }
+
+    #about-content p {
+        color: #01313B;
+        line-height: 2;
+    }
+
+    #about-content h2 {
+        text-transform: uppercase;
+        font-size: 4.5rem;
+        color: #01313B;
+        letter-spacing: 30px;
+        font-family: 'Unica One', cursive;
+    }
+
+}
